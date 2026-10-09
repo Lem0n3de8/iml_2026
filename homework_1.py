@@ -45,8 +45,8 @@ import matplotlib.pyplot as plt  # making plots
 # > which predicts $$
 # > \hat y(i) = \theta_0 + \theta_1 x(i)
 # > $$ for each index
-# > $i.$ Express the gradient $\nabla L$ of mean squared as a function of the
-# > parameter vector $\theta$ and the datapoints $(x(i), y(i)).$
+# > $i.$ Express the gradient $\nabla L$ of mean squared error as a function of
+# > the parameter vector $\theta$ and the datapoints $(x(i), y(i)).$
 
 # %% [markdown]
 # ### (b)
@@ -64,31 +64,7 @@ import matplotlib.pyplot as plt  # making plots
 
 
 # %% [markdown]
-# ## Part 3: Logistic Regression
-
-# %% [markdown]
-# ### (a)
-# > Give a general formula for the partial derivatives of cross-entropy loss
-# > with respect to the parameters $(W, b)$ in the multi-class logistic
-# > regression problem. (Hint: for a fixed $i$, denote $z = W x(i) + b.$ What
-# > are the partial derivatives with respect to the coordinates of $z$?)
-
-# %% [markdown]
-# ### (b)
-# > Extend `fit` method of `iml.SimpleClassifier` to fit a multi-class logistic
-# > regression model using gradient descent on the cross-entropy loss.
-
-# %% [markdown]
-# ### (c)
-# > Using your implementation from the last problem, train a logistic regression
-# > model on the iris dataset with only sepal length and sepal width as input
-# > features. Report your cross-entropy loss, and show the resulting decision
-# > boundaries. (You can use `iml.show_iris_classifier(model)`.) Ensure that
-# > your optimization converges within 100 iterations.
-
-
-# %% [markdown]
-# ## Part 4: k-Means and PCA
+# ## Part 3: k-Means and PCA
 
 # %% [markdown]
 # ### (a)
@@ -100,7 +76,7 @@ import matplotlib.pyplot as plt  # making plots
 # %% [markdown]
 # ### (b)
 # > Investigate `data/ulu.csv` using PCA and explain how this dataset was
-# > produced. Using scikit-learn, run both $k$-means clustering and dbscan on
-# > this dataset. Which method produces more reasonable ``clusters"?
+# > produced. Using scikit-learn, run both $k$-means clustering and DBSCAN on
+# > this dataset. Which method produces more reasonable "clusters"?
 
 
